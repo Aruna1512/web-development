@@ -1,0 +1,156 @@
+//Library 
+<!--webpage.html-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+nav{
+  position: fixed;
+  background: #1b1b1b;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a{
+  
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  margin-left: 7px;
+}
+.menu ul li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background:green;
+  color:white;
+}
+.img{
+  background-image :linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img15.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img::before{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.center{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title{
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+  text-shadow:-4px 4px 6px pink;
+}
+.center .sub_title{
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+  text-shadow:-4px 4px 6px pink;
+}
+h2{
+    float: left;
+    color: white;
+    margin-left: 250px;
+    text-shadow:-4px 4px 6px red;
+    text-align:end;
+    padding: -10px;
+    margin: 10px;
+    
+}
+p{
+    float: bottom right;
+    color: skyblue;
+    margin-left:10px;
+    text-shadow:-4px 4px 6px white;
+    text-align:center;
+    font-size:40px;
+}
+.menu .logo{ 
+  cursor:pointer;
+  transition:transform 0.5s;
+
+}
+.menu .logo:hover{
+     transform: translateX(10px);
+}
+input[type='name'],input[type='password']{
+    box-sizing: border-box;
+    height:50px;
+    width:300px;
+}
+h3{
+    color:pink;
+}
+</style>
+   </head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+      </div>
+      <ul>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Images</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+
+  <div class="img"></div>
+  <div class="center">
+    <h3 style="color:red"><marquee behavior="scroll" direction="left">MODERN LIBRARY</marquee></h3>
+    <div class="title">LOGIN</div>
+    <br><br><br>
+    <form>
+        <h3><label>Firstname:</label></h3>
+        <br>
+        <input type="name" value="aruna"/>
+        <br><br><br>
+        <h3><label>Password:</label></h3>
+        <br>
+        <input type="password" />
+        <br><br>
+     <p>"Nothing is pleasanter than exploring a library."</p>
+  </div>
+</body>
+</html>
